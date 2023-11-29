@@ -1,0 +1,155 @@
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --green: #10a779;
+    --light-green: #16dda1;
+    --dark-green: #0a694d;
+    --white: #ffff;
+    --dark: #262627;
+    --light-dark: #404040;      
+    --light: rgb(204, 204, 204);
+    --dark-bs: #212529;
+  }
+
+.title-creator{
+  margin-top: 10vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    max-width: 360px;
+    max-height: 500px;
+  }
+
+#cards{
+    max-width: 360px;
+    max-height: 500px;
+    border: 0.3vh solid var(--light-green);
+    color: var(--light-green);
+    margin: 0 auto;
+  }
+  
+  .card-title{
+    color: var(--light-green);
+  }
+  
+  .card-collection{
+    color: var(--light);
+  }
+
+  /*
+  FORM DO CARD
+  */
+
+
+.form-nft{
+  margin-left: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+.user{
+  padding: 0.5vh;
+}
+
+#nft-nome-input {
+  color: var(--white);
+  background-color: transparent;
+  border: 2px solid gray;
+  border-radius: 10vh;
+  font-size: smaller;
+}
+
+#nft-nome-input::placeholder {
+  color: rgb(204, 204, 204);
+  font-size: small;
+}
+
+#nft-nome-input:focus {
+  transition: 0.3s;
+  border: 2px solid var(--light-green);
+  box-shadow: 0px 0px 7px var(--light-green);
+}
+.btn-nft {
+    display: flex;
+    justify-content: center;
+  }
+  
+#btn-nft {
+    border: none;
+    background-color: var(--green);
+    width: 100%;
+    border-radius: 10vh;
+    transition: 0.3s;
+}
+  
+#btn-nft:hover {
+    background-color: transparent;
+    border: 2px solid var(--light-green);
+    box-shadow: 0px 0px 7px var(--light-green);
+    color: var(--light-green);
+    transition: 0.1s;
+}
+
+/*
+  INPUT NUMBER
+*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*
+  FOOTER
+*/
+
+.footer{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer img{
+  display: flex;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.footer small{
+  display: flex;
+  margin: 0 auto;
+}
+
+/*
+  SCROLL BAR
+*/
+::-webkit-scrollbar {
+  width: 0.8vh;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5vh;
+  background: var(--light-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-green);
+  border-radius: 5vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+}

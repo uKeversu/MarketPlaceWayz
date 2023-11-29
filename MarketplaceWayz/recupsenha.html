@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wayz - Forgot password</title>
+    <link rel="stylesheet" href="css/recupera.css" />
+
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <!--
+      BOOTSTRAP
+    -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!--
+      ICONE
+    -->
+    <link
+      href="https://css.gg/css?=|eye|facebook|google|twitter|instagram"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!--
+      FONTS
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+
+  <body class="bg-dark">
+    <!-- Navbar -->
+    <nav class="navbar bg-dark d-flex flex-row align-center">
+      <div class="container-fluid justify-content-left">
+        <!-- Logo Wayz -->
+        <img class="brand-wayz" src="img/wayz-green-white.png" alt="Wayz" height="30" />
+      </div>
+    </nav>
+
+    <div class="container">
+      <form action="recupsenha.php" method="post">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+          <h3 class="text-light mb-5">Recover your password</h3>
+          <div class="user d-flex">
+            <i class="bi bi-envelope-at-fill mb-2"></i>
+            <input
+              type="text"
+              class="form-control"
+              id="user-input"
+              name="cd_email"
+              placeholder="E-mail"
+              required autocomplete="off"/>
+          </div>
+          <div class="botoes d-flex justify-content-between mt-3">
+            <div class="btn-voltar col col-5">
+              <button type="submit" class="btn btn-success mt-3" id="btn-voltar">Return</button>
+            </div>
+            <div class="btn-enviar col col-5">
+              <button type="submit" class="btn btn-success mt-3" id="btn-enviar">Send</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <footer class="footer bg-dark p-3 m-0">
+      <hr style="width: 100%; color: var(--white)" />
+      <img src="img/wayz-green-white.png" alt="logo-wayz">
+      <small class=" text-light">©️ Todos os direitos reservados</small>
+    </footer>
+
+    <script>
+
+    const voltarButton = document.getElementById("btn-voltar");
+    voltarButton.addEventListener("click", function() {
+      window.location.href = "index.html";
+    });
+   
+    voltarButton.addEventListener("click", function() {
+      window.location.href = "index.html";
+    });
+   
+    const enviarButton = document.getElementById("btn-enviar");
+    const successMessage = document.getElementById("light-message");
+    
+    enviarButton.addEventListener("click", function() {
+      
+      successMessage.textContent = "Enviado com sucesso!";
+    });
+  </script>
+  
+  </body>
+</html>

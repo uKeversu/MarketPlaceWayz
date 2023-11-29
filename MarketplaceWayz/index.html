@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wayz - Página inicial</title>
+  <link rel="stylesheet" href="css/login-page.css"/>
+
+  <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+
+  <!--
+      BOOTSTRAP
+    -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!--
+      ICONE
+    -->
+  <link href="https://css.gg/css?=|eye|facebook|google|twitter|instagram" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <!--
+      FONTS
+    -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@500&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<style>
+
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #10a779;
+  --light-green: #16dda1;
+  --dark-green: #0a694d;
+  --white: #ffff;
+  --dark: #262627;
+  --light-dark: #404040;
+  --light: rgb(204, 204, 204);
+}
+
+.container{
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+  NAVBAR
+*/
+
+.navbar {
+    box-shadow: 0vh 0vh 5vh -2vh var(--dark-green);
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    height: 7vh;
+  }
+  
+  .brand-wayz{
+    display: flex;
+    margin-left: 5vh;
+    transition: 0.5s;
+  }
+  
+  .brand-wayz:hover{
+    transform: translateY(-5px);
+    transition: 0.5s ;
+    cursor: pointer;
+  }
+
+/*
+    LEFT - FORM
+*/
+
+.left h3 {
+  color: var(--white);
+  font-size: xx-large;
+}
+
+.left form {
+  max-width: 300px;
+}
+
+.left .senha,
+.left .user {
+  color: var(--light-green);
+  align-items: center;
+}
+
+.left .senha i,
+.left .user i {
+  padding-right: 10px;
+}
+
+.left #user-input {
+  color: var(--white);
+  background-color: transparent;
+  border: 0.4vh solid gray;
+  border-radius: 10vh;
+  font-size: smaller;
+}
+
+.left #user-input::placeholder {
+  color: var(--light);
+  font-size: small;
+}
+
+.left #user-input:focus {
+  transition: 0.3s;
+  border: 2px solid var(--light-green);
+  box-shadow: 0px 0px 7px var(--light-green);
+}
+
+.left #password-input {
+  color: var(--white);
+  background-color: transparent;
+  border: 0.4vh solid gray;
+  border-radius: 10vh;
+  font-size: smaller;
+}
+
+.left #password-input::placeholder {
+  color: rgb(204, 204, 204);
+  font-size: small;
+}
+
+.left #password-input:focus {
+  transition: 0.3s;
+  border: 2px solid var(--light-green);
+  box-shadow: 0px 0px 7px var(--light-green);
+}
+
+.btn-login {
+  display: flex;
+  justify-content: center;
+}
+
+#btn-login {
+  border: none;
+  background-color: var(--green);
+  width: 100%;
+  border-radius: 10vh;
+  transition: 0.3s;
+}
+
+#btn-login:hover {
+  background-color: transparent;
+  border: 1px solid var(--light-green);
+  box-shadow: 0px 0px 7px var(--light-green);
+  color: var(--light-green);
+  transition: 0.1s;
+}
+
+.cadastro p {
+  font-size: small;
+}
+
+.cadastro a {
+  text-decoration: none;
+  font-size: small;
+  color: var(--light-green);
+}
+
+.cadastro a:hover {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.recupera a {
+    text-decoration: none;
+    font-size: small;
+    color: var(--light-green);
+    display: flex;
+    justify-content: end;
+    margin-top: 0.5vh;
+}
+
+.recupera a:hover{
+  color: var(--green);
+  text-decoration: underline;
+}
+
+/*
+    RIGHT - NFTs
+*/
+
+#cards {
+  border: none;
+  display: flex;
+  border-radius: 10vh;
+}
+
+.card img{
+  max-width: 250px;
+  display:block;
+  margin: auto;
+}
+.right h3{
+  display: flex;
+  justify-content: center;
+}
+
+.p-nft {
+  color: var(--white);
+  font-size: 2vh;
+  text-align: justify;
+}
+.card .read-more {
+  border: none;
+  background-color: var(--green);
+  padding: 10px;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 10vh;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card .read-more:hover {
+  background: transparent;
+  transition: 0.1s;
+  border: 1px solid var(--light-green);
+  box-shadow: 0px 0px 7px var(--light-green);
+  color: var(--light-green);
+  padding: 10px;
+  margin-bottom: 1vh;
+}
+
+.a-readmore{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.a-readmore:hover{
+  color: var(--light-green);
+}
+
+/*
+    FOOTER
+*/
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer img{
+  display: flex;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.footer small{
+  display: flex;
+  margin: 0 auto;
+}
+
+/*
+    SCROLL BAR
+*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-green);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+}
+
+</style>
+
+<body class="bg-dark">
+  
+  <!-- Navbar -->
+  <nav>
+    <div class="navbar fixed-top bg-dark d-flex justify-content-start" id="navbar">
+      <img class="brand-wayz" src="img/wayz-green-white.png" alt="LogoWayz" height="30px">
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="left col col-6 mt-5 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <h3 class="mb-5">
+        Welcome to the biggest<br />
+        NFT Marketplace
+      </h3>
+      <form action="sessao.php" method="post">
+        <div class="user d-flex">
+          <i class="bi bi-person-fill mb-2"></i>
+          <input type="text" class="form-control mb-2" id="user-input" name="cd_user" placeholder="Username" autocomplete="off"
+            required />
+        </div>
+        <div class="senha d-flex">
+          <i class="bi bi-key-fill"></i>
+          <input type="password" class="form-control" id="password-input" name="cd_senha" placeholder="Password" autocomplete="off"
+            required />
+        </div>
+        
+        <div class="recupera">
+          <a href="recupsenha.html"> Forgot password </a>
+        </div>
+        <div class="btn-login">
+          <button href="home.php" type="submit" class="btn btn-success mt-3 mb-3" id="btn-login">
+            Login
+          </button>
+        </div>
+        <div class="d-flex flex-row justify-content-between">
+          <hr style="width: 40%; color: var(--white)" />
+          <p class="text-white mt-1">ou</p>
+          <hr style="width: 40%; color: var(--white)" />
+        </div>
+        <div class="cadastro d-flex justify-content-center">
+          <p class="text-white">
+            Don't have an account?
+            <a href="cadastros.html"> Create account</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <div class="right col col-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+      <div class="card bg-dark" id="cards">
+          <img src="img/astronaut-bitcoin.png" />
+        <div class="content">
+          <!-- Título NFT -->
+          <h3 class="title-nft text-light mb-4">What is NFTs?</h3>
+          <!-- Parágrado NFT -->
+          <p class="p-nft">
+            NFTs are digital assets and could be photos, videos, audio files, or another digital format. Every NFT contains a digital signature which makes each one unique.  NFT examples include artwork, comic books, sports collectibles, trading cards, games and more. 
+          </p>
+          <!-- Botão saiba mais -->
+          <button class="read-more"> <a class="a-readmore" href="https://pt.wikipedia.org/wiki/Token_n%C3%A3o_fung%C3%ADvel">Learn more </a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="assets/js/scripts.bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+@import url(menu.css);
+
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --green: #10a779;
+    --light-green: #16dda1;
+    --dark-green: #0a694d;
+    --white: #ffff;
+    --dark: #262627;
+    --light-dark: #404040;      
+    --light: rgb(204, 204, 204);
+    --dark-bs: #212529;
+  }
+
+#home-title{
+  display: flex;
+  margin-top: 20vh;
+}
+
+#buy-title{
+  margin-top: 12vh;
+  margin-bottom: 5vh;
+}
+
+.card-filters a{
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.5s;
+  padding-bottom: 0.5vh;
+}
+
+.card-filters a:hover{
+  color: var(--light-green);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.card-filters a.active{
+  border-bottom: 2px solid var(--light-green);
+}
+
+.conteudo{
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+  max-width: 300px;
+  max-height: 400px;
+  font-size: small;
+}
+
+#cards{
+  border: 0.3vh solid var(--light-green);
+  color: var(--light-green);
+}
+
+.card-title{
+  color: var(--light-green);
+}
+
+.card-collection{
+  color: var(--light);
+}
+
+  p{color: var(--white);}
+
+  #btn-buy {
+    border: none;
+    background-color: var(--green);
+    border-radius: 10vh;
+    transition: 0.3s;
+  }
+  
+  #btn-buy:hover, #btn-confirm:hover {
+    background-color: var(--dark-bs);
+    border: 1px solid var(--light-green);
+    box-shadow: 0px 0px 7px var(--light-green);
+    color: var(--light-green);
+    transition: 0.1s;
+  }
+
+
+/*
+    SCROLL BAR
+*/
+::-webkit-scrollbar {
+    width: 0.8vh;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 5vh;
+    background: var(--light-dark);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--dark-green);
+    border-radius: 5vh;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--green);
+  }
+  
+
+
+/*
+  FOOTER
+*/
+
+.footer{
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer img{
+  display: flex;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.footer small{
+  display: flex;
+  margin: 0 auto;
+}
+
+
+  /*
+    RESPONSIVIDADE
+  */
+
+  @media screen and (max-width: 400px) {
+
+    .pesquisa input, .pesquisa button{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .conteudo{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card-filters{
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .card-filters a.active{
+      color: var(--light-green);
+      border-bottom: none;
+    }
+
+}
+

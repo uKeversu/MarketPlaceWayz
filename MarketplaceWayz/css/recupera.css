@@ -1,0 +1,143 @@
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+:root {
+    --green: #10a779;
+    --light-green: #16dda1;
+    --dark-green: #0a694d;
+    --white: #ffff;
+    --dark: #262627;
+    --light-dark: #404040;
+    --light: rgb(204, 204, 204);
+}
+ 
+.navbar {
+    box-shadow: 0vh 0vh 5vh -2vh var(--dark-green);
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+    height: 7vh;
+}
+  
+.brand-wayz{
+    display: flex;
+    margin-left: 5vh;
+    transition: 0.5s;
+}
+  
+.brand-wayz:hover{
+    transform: translateY(-5px);
+    transition: 0.5s ;
+    cursor: pointer;
+}
+  
+.container{
+    margin-top: 20vh;
+}
+
+h3 {
+    color: var(--white);
+}
+
+.user {
+    color: var(--light-green);
+    align-items: center;
+}
+  
+.user i {
+    padding-right: 10px;
+}
+
+#user-input {
+    color: var(--white);
+    background-color: transparent;
+    border: 0.4vh solid gray;
+    border-radius: 10vh;
+    font-size: smaller;
+}
+  
+#user-input::placeholder {
+    color: var(--light);
+    font-size: small;
+}
+    
+#user-input:focus {
+    transition: 0.3s;
+    border: 2px solid var(--light-green);
+    box-shadow: 0px 0px 7px var(--light-green);
+}
+  
+#btn-voltar {
+    border: none;
+    background-color: var(--green);
+    width: 100%;
+    border-radius: 10vh;
+    transition: 0.3s;
+}
+  
+#btn-voltar:hover {
+    background-color: transparent;
+    border: 1px solid var(--light-green);
+    box-shadow: 0px 0px 7px var(--light-green);
+    color: var(--light-green);
+    transition: 0.1s;
+}
+
+#btn-enviar {
+    border: none;
+    background-color: var(--green);
+    width: 100%;
+    border-radius: 10vh;
+    transition: 0.3s;
+}
+  
+#btn-enviar:hover {
+    background-color: transparent;
+    border: 1px solid var(--light-green);
+    box-shadow: 0px 0px 7px var(--light-green);
+    color: var(--light-green);
+    transition: 0.1s;
+}
+  
+.recupera a {
+    text-decoration: none;
+    font-size: small;
+    color: var(--light-green);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+   
+#success-message {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    color: var(--green);
+}
+
+/*
+    FOOTER
+*/
+  
+.footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+  
+.footer img{
+    display: flex;
+    margin: 0 auto;
+    max-width: 100px;
+}
+  
+.footer small{
+    display: flex;
+    margin: 0 auto;
+}

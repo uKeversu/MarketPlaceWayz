@@ -1,0 +1,242 @@
+* {
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #10a779;
+  --light-green: #16dda1;
+  --dark-green: #0a694d;
+  --white: #ffff;
+  --dark: #262627;
+  --light-dark: #404040;
+  --light: rgb(204, 204, 204);
+}
+
+.container{
+  margin-top: 20vh;
+}
+
+/*
+  NAVBAR
+*/
+
+.navbar {
+  box-shadow: 0vh 0vh 5vh -2vh var(--dark-green);
+  border-bottom-left-radius: 5vh;
+  border-bottom-right-radius: 5vh;
+  height: 7vh;
+}
+
+.logo{
+  display: flex;
+  margin-left: 2vh;
+  transition: 0.5s;
+}
+
+.logo:hover{
+  transform: translateY(-5px);
+  transition: 0.5s ;
+  cursor: pointer;
+}
+
+/*
+    LEFT - FORM
+*/
+
+.left h3 {
+  color: var(--white);
+  font-size: xx-large;
+}
+
+.left form {
+  max-width: 300px;
+}
+
+.left .senha,
+.left .user {
+  color: var(--light-green);
+  align-items: center;
+}
+
+.left .senha i,
+.left .user i {
+  padding-right: 10px;
+}
+
+.left #user-input {
+  color: var(--white);
+  background-color: transparent;
+  border: 0.4vh solid gray;
+  border-radius: 10vh;
+  font-size: smaller;
+}
+
+.left #user-input::placeholder {
+  color: var(--light);
+  font-size: small;
+}
+
+.left #user-input:focus {
+  transition: 0.3s;
+  border: 2px solid var(--light-green);
+  box-shadow: 0px 0px 7px var(--light-green);
+}
+
+.left #password-input {
+  color: var(--white);
+  background-color: transparent;
+  border: 0.4vh solid gray;
+  border-radius: 10vh;
+  font-size: smaller;
+}
+
+.left #password-input::placeholder {
+  color: rgb(204, 204, 204);
+  font-size: small;
+}
+
+.left #password-input:focus {
+  transition: 0.3s;
+  border: 2px solid var(--light-green);
+  box-shadow: 0px 0px 7px var(--light-green);
+}
+
+.btn-login {
+  display: flex;
+  justify-content: center;
+}
+
+#btn-login {
+  border: none;
+  background-color: var(--green);
+  width: 100%;
+  border-radius: 10vh;
+  transition: 0.3s;
+}
+
+#btn-login:hover {
+  background-color: transparent;
+  border: 1px solid var(--light-green);
+  box-shadow: 0px 0px 7px var(--light-green);
+  color: var(--light-green);
+  transition: 0.1s;
+}
+
+.cadastro p {
+  font-size: small;
+}
+
+.cadastro a {
+  text-decoration: none;
+  font-size: small;
+  color: var(--light-green);
+}
+
+.cadastro a:hover {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.recupera a {
+  text-decoration: none;
+  font-size: small;
+  color: var(--light-green);
+  display: flex;
+  justify-content: end;
+  margin-top: 0.5vh;
+}
+
+.recupera a:hover{
+color: var(--green);
+text-decoration: underline;
+}
+
+/*
+    CARDS
+*/
+
+#cards {
+  border: none;
+  border-radius: 10vh;
+}
+
+.card img{
+  max-width: 250px;
+  margin: auto;
+}
+.right h3{
+  display: flex;
+  justify-content: center;
+}
+
+.p-nft {
+  color: var(--white);
+  font-size: 2vh;
+  text-align: justify;
+}
+.card .read-more {
+  border: none;
+  background-color: var(--green);
+  padding: 10px;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 10vh;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card .read-more:hover {
+  background: transparent;
+  transition: 0.1s;
+  border: 1px solid var(--light-green);
+  box-shadow: 0px 0px 7px var(--light-green);
+  color: var(--light-green);
+  padding: 10px;
+  margin-bottom: 1vh;
+  width: 100%;
+}
+
+/*
+    FOOTER
+*/
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer img{
+  display: flex;
+  margin: 0 auto;
+  max-width: 100px;
+}
+
+.footer small{
+  display: flex;
+  margin: 0 auto;
+}
+
+/*
+    SCROLL BAR
+*/
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-green);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+}

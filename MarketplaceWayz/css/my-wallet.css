@@ -1,0 +1,33 @@
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --green: #10a779;
+    --light-green: #16dda1;
+    --dark-green: #0a694d;
+    --white: #ffff;
+    --dark: #262627;
+    --light-dark: #404040;      
+    --light: rgb(204, 204, 204);
+    --dark-bs: #212529;
+  }
+  
+  #btn-withdraw {
+    border: none;
+    background-color: var(--green);
+    width: 100%;
+    border-radius: 10vh;
+    transition: 0.3s;
+  }
+  
+  #btn-withdraw:hover {
+    background-color: transparent;
+    border: 2px solid var(--light-green);
+    box-shadow: 0px 0px 7px var(--light-green);
+    color: var(--light-green);
+    transition: 0.1s;
+  }
